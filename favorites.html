@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites - Coppell Community Resource Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <div class="coppell-logo">
+                    <a href="website.html" aria-label="Home"><img src="https://www.logotypes101.com/logos/765/CC7E7E601E7D89E05BAD8B0F064B7C14/The_City_of_Coppell29.png" alt="City of Coppell Logo">
+                </div>
+                <div class="header-title">
+                    <h1><a href="website.html" aria-label="Home">Coppell Community Hub</a></h1>
+                    <p>Your Connection to Community Resources</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="website.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Coppell</a>
+                <a href="map.html" class="nav-link">Map</a>
+                <a href="favorites.html" class="nav-link">My Favorites (<span id="favCount">0</span>)</a>
+                <a href="reference.html" class="nav-link">References</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main id="main-content">
+        <section class="about-page-section">
+            <div class="section-content">
+                <h1 style="font-size: 3rem; font-weight: 700; color: #111827; margin-bottom: 1rem; text-align: center;">My Saved Resources</h1>
+                <p style="text-align: center; color: #6b7280; margin-bottom: 3rem; font-size: 1.1rem;">Resources you've bookmarked for quick access</p>
+
+
+                <div style="display: flex; gap: 1rem; margin-bottom: 2rem; justify-content: center;">
+                    <button onclick="downloadFavorites()" style="padding: 0.75rem 1.5rem; background: #3b82f6; color: white; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-download"></i> Download List
+                    </button>
+                    <button onclick="clearAllFavorites()" style="padding: 0.75rem 1.5rem; background: #ef4444; color: white; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-trash"></i> Clear All
+                    </button>
+                </div>
+
+
+                <div class="resource-grid" id="favoritesGrid"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3 style="margin-bottom: 1rem;">Coppell Community Hub</h3>
+            <p>Connecting residents with local resources</p>
+            <div class="footer-links">
+                <a href="website.html">Home</a>
+                <a href="about.html">About Coppell</a>
+                <a href="map.html">Map</a>
+                <a href="reference.html">References</a>
+                <a href="https://www.coppelltx.gov" target="_blank">City of Coppell</a>
+            </div>
+            <div style="border-top: 1px solid #374151; padding-top: 1.5rem; margin-top: 1.5rem; color: #9ca3af;">
+                <p>&copy; 2025 Coppell Community Resource Hub | TSA Webmaster Competition</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Load scripts: website.js provides shared data/functions; favorites.js renders the favorites grid -->
+    <script src="website.js"></script>
+    <script src="favorites.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
