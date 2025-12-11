@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map - Coppell Community Resource Hub</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <div class="coppell-logo">
+                    <a href="website.html" aria-label="Home"><img src="https://www.logotypes101.com/logos/765/CC7E7E601E7D89E05BAD8B0F064B7C14/The_City_of_Coppell29.png" alt="City of Coppell Logo">
+                </div>
+                <div class="header-title">
+                    <h1><a href="website.html" aria-label="Home">Coppell Community Hub</a></h1>
+                    <p>Your Connection to Community Resources</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="website.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Coppell</a>
+                <a href="map.html" class="nav-link">Map</a>
+                <a href="favorites.html" class="nav-link">My Favorites (<span id="favCount">0</span>)</a>
+                <a href="reference.html" class="nav-link">References</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 4rem 0; border-bottom: 3px solid #3b82f6;">
+            <div class="section-content">
+                <h1 style="font-size: 3.5rem; font-weight: 800; color: #1e40af; margin-bottom: 1rem; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <i class="fas fa-map" style="margin-right: 1rem;"></i>Coppell Community Map
+                </h1>
+                <p style="text-align: center; color: #374151; font-size: 1.2rem; max-width: 900px; margin: 0 auto;">
+                    Discover all community resources and facilities throughout Coppell. From parks and libraries to recreation centers and arts venues, find everything you need in one place.
+                </p>
+            </div>
+        </section>
+
+        <!-- FACILITIES GRID -->
+        <section style="background: #f8fafc; padding: 4rem 0;">
+            <div class="section-content">
+                <h2 style="font-size: 2.5rem; font-weight: 700; color: #111827; margin-bottom: 3rem; text-align: center;">Community Facilities</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                    <!-- Education Card -->
+                    <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 5px solid #3b82f6; cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 25px rgba(59,130,246,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(59,130,246,0.3);">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; color: #111827; margin-bottom: 0.75rem; font-weight: 700;">Libraries</h3>
+                        <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6; margin: 0;">Cozby Library offers extensive collections, digital resources, technology labs, and educational programs for all ages.</p>
+                    </div>
+
+                    <!-- Parks Card -->
+                    <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 5px solid #10b981; cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 25px rgba(16,185,129,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(16,185,129,0.3);">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; color: #111827; margin-bottom: 0.75rem; font-weight: 700;">Parks & Nature</h3>
+                        <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6; margin: 0;">Andrew Brown Park and Coppell Nature Park feature hiking trails, playgrounds, splash pads, and scenic views.</p>
+                    </div>
+
+                    <!-- Arts Card -->
+                    <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 5px solid #8b5cf6; cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 25px rgba(139,92,246,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(139,92,246,0.3);">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; color: #111827; margin-bottom: 0.75rem; font-weight: 700;">Arts & Culture</h3>
+                        <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6; margin: 0;">Coppell Arts Center hosts theater productions, art galleries, and classes in visual and performing arts.</p>
+                    </div>
+
+                    <!-- Recreation Card -->
+                    <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 5px solid #f59e0b; cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 25px rgba(245,158,11,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(245,158,11,0.3);">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; color: #111827; margin-bottom: 0.75rem; font-weight: 700;">Recreation</h3>
+                        <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6; margin: 0;">The CORE offers fitness centers, indoor and outdoor pools, water slides, and comprehensive sports facilities.</p>
+                    </div>
+
+                    <!-- Market Card -->
+                    <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 5px solid #06b6d4; cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 25px rgba(6,182,212,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(6,182,212,0.3);">
+                            <i class="fas fa-shopping-basket"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; color: #111827; margin-bottom: 0.75rem; font-weight: 700;">Farmers Market</h3>
+                        <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6; margin: 0;">Coppell Farmers Market operates every Saturday with fresh produce, local goods, and community activities.</p>
+                    </div>
+
+                    <!-- Community Card -->
+                    <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-left: 5px solid #ef4444; cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 25px rgba(239,68,68,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(239,68,68,0.3);">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; color: #111827; margin-bottom: 0.75rem; font-weight: 700;">Community</h3>
+                        <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6; margin: 0;">Senior Center, Volunteer Programs, and community events connecting residents throughout the year.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP SECTION -->
+        <section style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 4rem 0;">
+            <div class="section-content">
+                <h2 style="font-size: 2.5rem; font-weight: 700; color: #1e40af; margin-bottom: 2rem; text-align: center;">
+                    <i class="fas fa-compass" style="margin-right: 1rem;"></i>Coppell Location
+                </h2>
+                
+                <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); overflow: hidden;">
+                    <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 12px; color: white;">
+                        <p style="margin: 0; font-size: 1.05rem;">
+                            <i class="fas fa-map-marker-alt" style="margin-right: 0.75rem;"></i>
+                            <strong>Coppell, Texas</strong> is strategically located in the Dallas/Fort Worth Metroplex, offering easy access to major highways and DFW International Airport.
+                        </p>
+                    </div>
+
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53765.89472279847!2d-96.99391937832032!3d32.95454887929849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2e7e3e0f0001%3A0x1234567890abcdef!2sCoppell%2C%20TX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="550" 
+                        style="border: none; border-radius: 12px; box-shadow: inset 0 2px 8px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                    <p style="color: #6b7280; font-size: 0.95rem; margin-top: 1.5rem; text-align: center;">
+                        <i class="fas fa-info-circle" style="color: #3b82f6; margin-right: 0.5rem;"></i>
+                        Map showing Coppell's location in the Dallas/Fort Worth area
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3 style="margin-bottom: 1rem;">Coppell Community Hub</h3>
+            <p>Connecting residents with local resources</p>
+            <div class="footer-links">
+                <a href="website.html">Home</a>
+                <a href="about.html">About Coppell</a>
+                <a href="map.html">Map</a>
+                <a href="reference.html">References</a>
+                <a href="https://www.coppelltx.gov" target="_blank">City of Coppell</a>
+            </div>
+            <div style="border-top: 1px solid #374151; padding-top: 1.5rem; margin-top: 1.5rem; color: #9ca3af;">
+                <p>&copy; 2025 Coppell Community Resource Hub | TSA Webmaster Competition Entry</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript.js/website.js"></script>
+</body>
+</html>
