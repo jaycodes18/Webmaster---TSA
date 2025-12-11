@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coppell Community Resource Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="website.css">
+    
+    
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <div class="coppell-logo">
+                    <a href="website.html" aria-label="Home"><img src="https://www.logotypes101.com/logos/765/CC7E7E601E7D89E05BAD8B0F064B7C14/The_City_of_Coppell29.png" alt="City of Coppell Logo">
+                </div>
+                <div class="header-title">
+                    <h1><a href="website.html" aria-label="Home">Coppell Community Hub</a></h1>
+                    <p>Your Connection to Community Resources</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="website.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Coppell</a>
+                <a href="map.html" class="nav-link">Map</a>
+                <a href="favorites.html" class="nav-link">My Favorites (<span id="favCount">0</span>)</a>
+                <a href="reference.html" class="nav-link">References</a>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <div class="hero-slider">
+        <button class="slider-arrow slider-arrow-left" onclick="prevSlide()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow slider-arrow-right" onclick="nextSlide()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+
+
+
+        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url('https://northtexastrails.com/wp-content/uploads/2021/07/689C4803-AEEA-48FD-B13D-B6989A5594D2-scaled.jpeg'); ">
+            <div class="slide-overlay">
+                <h2>Find Out What's Happening in Coppell</h2>
+                <p>Discover programs, events, and services that make our community thrive</p>
+                <div class="hero-buttons">
+                    <a href="#resources-start" class="btn btn-primary">Explore Resources</a>
+                    <button class="btn btn-secondary" onclick="openModal()">Add a Resource</button>
+                </div>
+            </div>
+            <div class="slide-caption">
+                <h3>Coppell Nature Park Trails</h3>
+            </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url('https://www.coppelltx.gov/ImageRepository/Document?documentID=5136');">
+            <div class="slide-overlay">
+                <h2>Community Programs & Activities</h2>
+                <p>Connect with local services and events happening near you</p>
+                <div class="hero-buttons">
+                    <a href="#resources-start" class="btn btn-primary">Explore Resources</a>
+                    <button class="btn btn-secondary" onclick="openModal()">Add a Resource</button>
+                </div>
+            </div>
+            <div class="slide-caption">
+                <h3>Coppell Library Community Commons</h3>
+            </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url('https://bloximages.chicago2.vip.townnews.com/starlocalmedia.com/content/tncms/assets/v3/editorial/7/7b/77bd601a-66c7-11ee-a6ba-83aaffd8027b/6524353ad076d.image.jpg?crop=1733%2C910%2C13%2C100&resize=1200%2C630&order=crop%2Cresize');">
+            <div class="slide-overlay">
+                <h2>Engage with Your Community</h2>
+                <p>From arts to athletics, find opportunities to get involved</p>
+                <div class="hero-buttons">
+                    <a href="#resources-start" class="btn btn-primary">Explore Resources</a>
+                    <button class="btn btn-secondary" onclick="openModal()">Add a Resource</button>
+                </div>
+            </div>
+            <div class="slide-caption">
+                <h3>Old Town Coppell Events</h3>
+            </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url('https://www.coppelltx.gov/ImageRepository/Document?documentID=4155');">
+            <div class="slide-overlay">
+                <h2>Recreation & Wellness</h2>
+                <p>Stay active with our community fitness programs</p>
+                <div class="hero-buttons">
+                    <a href="#resources-start" class="btn btn-primary">Explore Resources</a>
+                    <button class="btn btn-secondary" onclick="openModal()">Add a Resource</button>
+                </div>
+            </div>
+            <div class="slide-caption">
+                <h3>The CORE Recreation Center</h3>
+            </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url('https://www.coppellartscenter.org/assets/img/S030_sh0150_Coppell_Arts_Center_Base_JPG_Full_t01_-2fc3f50367.jpg');">
+            <div class="slide-overlay">
+                <h2>Arts & Culture</h2>
+                <p>Explore creative opportunities for all ages</p>
+                <div class="hero-buttons">
+                    <a href="#resources-start" class="btn btn-primary">Explore Resources</a>
+                    <button class="btn btn-secondary" onclick="openModal()">Add a Resource</button>
+                </div>
+            </div>
+            <div class="slide-caption">
+                <h3>Coppell Arts Center</h3>
+            </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url('https://coreconstruction.com/wp-content/uploads/2022/02/007_16_01_002_N39_medium.jpg');">
+            <div class="slide-overlay">
+                <h2>Family Fun</h2>
+                <p>Make memories at Coppell's parks and recreation areas</p>
+                <div class="hero-buttons">
+                    <a href="#resources-start" class="btn btn-primary">Explore Resources</a>
+                    <button class="btn btn-secondary" onclick="openModal()">Add a Resource</button>
+                </div>
+            </div>
+            <div class="slide-caption">
+                <h3>Andrew Brown Park</h3>
+            </div>
+        </div>
+
+
+
+
+        <div class="slider-nav">
+            <div class="nav-dot active" onclick="goToSlide(0)"></div>
+            <div class="nav-dot" onclick="goToSlide(1)"></div>
+            <div class="nav-dot" onclick="goToSlide(2)"></div>
+            <div class="nav-dot" onclick="goToSlide(3)"></div>
+            <div class="nav-dot" onclick="goToSlide(4)"></div>
+            <div class="nav-dot" onclick="goToSlide(5)"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+        <section class="featured-section" id="resources-start">
+            <div class="section-content">
+                <div class="section-header" style="margin-bottom: 3rem;">
+                    <h2 style="font-size: 2.5rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">Featured Community Resources</h2>
+                    <p style="font-size: 1.1rem; color: #6b7280;">Spotlight on essential services making a difference in Coppell</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;" id="featuredGrid"></div>
+            </div>
+        </section>
+        <div class="category-filters">
+            <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+                <div style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                        <div style="flex: 1; min-width: 250px; position: relative;">
+                            <i class="fas fa-search" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: #9ca3af;"></i>
+                            <input type="text"
+                                   id="searchInput"
+                                   placeholder="Search resources by name or keyword..."
+                                   style="width: 100%; padding: 0.75rem 1rem 0.75rem 3rem; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 1rem; transition: all 0.3s;"
+                                   oninput="applyFilters()"
+                                   onfocus="this.style.borderColor='#3b82f6'; this.style.boxShadow='0 0 0 3px rgba(59, 130, 246, 0.1)'"
+                                   onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+                        </div>
+                        <button onclick="clearSearch()" style="padding: 0.75rem 1.5rem; background: #f3f4f6; color: #374151; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#e5e7eb'" onmouseout="this.style.background='#f3f4f6'">
+                            <i class="fas fa-times"></i> Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterCategory('all', this)">All Resources</button>
+                <button class="filter-btn social-services" onclick="filterCategory('social-services', this)">Social Services</button>
+                <button class="filter-btn health" onclick="filterCategory('health', this)">Health</button>
+                <button class="filter-btn education" onclick="filterCategory('education', this)">Education</button>
+                <button class="filter-btn arts" onclick="filterCategory('arts', this)">Arts</button>
+                <button class="filter-btn community" onclick="filterCategory('community', this)">Community</button>
+                <button class="filter-btn emergency" onclick="filterCategory('emergency', this)">Emergency</button>
+            </div>
+        </div>
+
+
+
+
+        <section class="resources-section" id="resources">
+            <div class="resources-header">
+                <h2>Community Resources</h2>
+                <p>Explore programs, services, and opportunities throughout Coppell</p>
+            </div>
+            <div class="resource-grid" id="resourceGrid"></div>
+        </section>
+
+!
+    <footer>
+        <div class="footer-content">
+            <h3 style="margin-bottom: 0.1rem;">Coppell Community Hub</h3>
+            <p>Connecting residents with local resources</p>
+            <div class="footer-links">
+                <a href="website.html">Home</a>
+                <a href="about.html">About Coppell</a>
+                <a href="favorites.html">My Favorites</a>
+                <a href="map.html" class="active">Map</a>
+                <a href="reference.html">References</a>
+                <a href="https://www.coppelltx.gov" target="_blank">City of Coppell</a>
+            </div>
+            <div style="border-top: 1px solid #374151; padding-top: 1.5rem; margin-top: 1.5rem; color: #125ee1;">
+                <p>&copy; 2025 Coppell Community Resource Hub | TSA Webmaster Competition Entry</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Share Modal -->
+    <div class="modal" id="shareModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Share Resource</h3>
+                <button class="close-modal" onclick="closeShareModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 1.5rem; color: #6b7280;">Share this resource with others:</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <button onclick="shareVia('email')" style="flex: 1; min-width: 120px; padding: 1rem; background: #3b82f6; color: white; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        <i class="fas fa-envelope"></i> Email
+                    </button>
+                    <button onclick="shareVia('copy')" style="flex: 1; min-width: 120px; padding: 1rem; background: #10b981; color: white; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        <i class="fas fa-link"></i> Copy Link
+                    </button>
+                    <button onclick="shareVia('print')" style="flex: 1; min-width: 120px; padding: 1rem; background: #8b5cf6; color: white; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Rating Modal -->
+    <div class="modal" id="ratingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Rate This Resource</h3>
+                <button class="close-modal" onclick="closeRatingModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 1rem; color: #6b7280; text-align: center;">How helpful was this resource?</p>
+                <div class="rating-stars" id="ratingStars">
+                    <i class="fas fa-star" onclick="setRating(1)"></i>
+                    <i class="fas fa-star" onclick="setRating(2)"></i>
+                    <i class="fas fa-star" onclick="setRating(3)"></i>
+                    <i class="fas fa-star" onclick="setRating(4)"></i>
+                    <i class="fas fa-star" onclick="setRating(5)"></i>
+                </div>
+                <button onclick="submitRating()" style="width: 100%; margin-top: 1.5rem; padding: 0.875rem; background: #3b82f6; color: white; border: none; border-radius: 10px; font-weight: 700; cursor: pointer;">
+                    Submit Rating
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Submission Form Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Suggest a Community Resource</h3>
+                <button class="close-modal" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Resource Name</label>
+                    <input type="text" id="formName" placeholder="e.g., Community Center">
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="formCategory">
+                        <option value="">Select category</option>
+                        <option value="social-services">Social Services</option>
+                        <option value="health">Health</option>
+                        <option value="education">Education</option>
+                        <option value="arts">Arts</option>
+                        <option value="community">Community</option>
+                        <option value="emergency">Emergency</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="formDescription" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Contact</label>
+                    <input type="text" id="formContact">
+                </div>
+                <div class="form-group">
+                    <label>Website</label>
+                    <input type="url" id="formWebsite">
+                </div>
+                <button class="submit-btn" onclick="submitForm()">
+                    <i class="fas fa-paper-plane"></i><span>Submit</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Load main scripts (website.js must load before favorites.js) -->
+    <script src="website.js"></script>
+    <script src="favorites.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
